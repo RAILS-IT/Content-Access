@@ -24,7 +24,7 @@ use Drupal\content_access\ContentAccessInterface;
 function content_access_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
     case 'help.page.content_access':
-    case 'entity.node.content_access':
+    // case 'entity.node.content_access':
     case 'entity.node_type.content_access_form':
       $hint_service = FALSE;
       if (!empty(\Drupal::hasService('advanced_help_hint.gethint'))) {
